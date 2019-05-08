@@ -5,10 +5,10 @@ import org.junit.Test;
 import org.neomatrix369.salaryslip.domain.Employee;
 import org.neomatrix369.salaryslip.domain.SalarySlip;
 
-public class SalarySlipGeneratorTest {
+public class SalarySlipGeneratorIntegrationTest {
 
     @Test
-    public void checkThatICanGenerateASalarySlip() {
+    public void checkThatICanGenerateASalarySlipWithASalaryOf24000() {
         //given my generator
         SalarySlipGenerator salarySlipGenerator = new SalarySlipGenerator();
         //and employee details
