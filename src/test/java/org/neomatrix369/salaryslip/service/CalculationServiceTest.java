@@ -28,7 +28,7 @@ public class CalculationServiceTest {
             double nationalInsuranceContributions = calculationService.calculateNationalInsuranceContributions(arrayOfMonthlySalaryAndExpectedContributions[i][0]);
             // then I get the right contributions
             double expected = arrayOfMonthlySalaryAndExpectedContributions[i][1];
-            Assert.assertEquals(expected,nationalInsuranceContributions,1);
+            Assert.assertEquals(expected,nationalInsuranceContributions,0.01);
         }
 
     }

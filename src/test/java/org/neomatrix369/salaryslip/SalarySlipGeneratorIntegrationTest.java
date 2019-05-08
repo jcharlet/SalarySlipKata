@@ -24,10 +24,10 @@ public class SalarySlipGeneratorIntegrationTest {
         Assert.assertNotNull(salarySlip);
         Assert.assertEquals(12345,salarySlip.getEmployee().getId());
         Assert.assertEquals("John J Doe",salarySlip.getEmployee().getName());
-        Assert.assertEquals(2000.00,salarySlip.getGrossSalary(),1);
-        Assert.assertEquals(159.40,salarySlip.getNationalInsuranceContributions(),1);
-        Assert.assertEquals(916.67,salarySlip.getTaxFreeAllowance(),1);
-        Assert.assertEquals(1083.33,salarySlip.getTaxableIncome(),1);
-        Assert.assertEquals(216.67,salarySlip.getTaxPayable(),1);
+        Assert.assertEquals(2000.00,salarySlip.getGrossSalary(),0.01);
+        Assert.assertEquals(159.40,salarySlip.getNationalInsuranceContributions(),0.01);
+        Assert.assertEquals(916.67,salarySlip.getTaxFreeAllowance(),0.01);
+        Assert.assertEquals(1083.33,salarySlip.getTaxableIncome(),0.01);
+        Assert.assertEquals(216.67,salarySlip.getTaxPayable(),0.01);
     }
 }
