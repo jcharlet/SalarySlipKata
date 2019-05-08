@@ -99,6 +99,32 @@ Salary slip specification
 
   See the [Examples: National Insurance contributions and Tax calculations](EXAMPLES.md) section for examples of the above mentioned National Insurance and Tax calculations.   
  
+ 
+### extra specifications by Jeremie 
+
+
+    - Given employee name, ID and gross salary
+    - when I generate a salary slip
+    - then I get salary slips contains employee details like employee id, employee name and their monthly salary details like their gross salary, national insurance contributions, tax-free allowance*, taxable income and tax payable
+
+I would break the development into features.
+
+    • Generate empty salary slip with monthly salary
+        ◦ Integration tests with missing scenarios
+    • calculate National Insurance contributions
+        ◦ UT on calculation from examples
+    • calculate Tax payable
+        ◦ UT on calculation from examples
+    • take into account personal allowance rule over £100,000
+        ◦ UT on calculation
+
+Investigate conflict on personal allowance over £100,000
+
++ add missing scenarios:
+    - salary < 8000
+    - 8000 < salary < 11000
+    - salary > 150000
+
 ### Resources
 
 - [Sample Salary Slip](http://1.bp.blogspot.com/-lJXMuMQCGtE/Udm8dlTIeSI/AAAAAAAAA1Q/jLxBZndJTAA/s1600/Pay+Slip+Format.JPG)
